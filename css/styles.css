@@ -42,7 +42,7 @@ body {
 .link {
   font-family: inherit;
   text-decoration: none;
-  color: var(--darc-color);
+  
 }
 
 h1,
@@ -84,12 +84,6 @@ ul {
   height: auto;
 }
 
-.contacts-link:focus,
-.contacts-link:hover,
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--iris-color);
-}
 
 .hero-btm:hover,
 .hero-btm:focus,
@@ -163,12 +157,20 @@ ul {
   margin-right: 77px;
 }
 
+.nav-site .nav-link:active,
+.nav-site .link:hover,
+.nav-site .link:focus {
+  color: var(--iris-color);
+}
+
+
 .studio-header {
   color: var(--darc-color);
 }
 
-.nav-link.current {
+/* .nav-link.current {
   position: relative;
+  color: var(--iris-color);
 }
 
 .nav-link.current::after   {
@@ -181,7 +183,7 @@ ul {
   height: 4px;
   border-radius: 4px;
   background-color: var(--click-color);
-}
+} */
 
 .nav-link {
   display: flex;
@@ -189,6 +191,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--darc-color);
   margin-right: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -207,6 +210,12 @@ ul {
   transition-duration: 240ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.contacts-link:focus,
+.contacts-link:hover {
+  color: var(--iris-color);
+}
+
 
 /* ----- HERO ----- */
 
