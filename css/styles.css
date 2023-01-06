@@ -101,7 +101,7 @@ ul {
   height: 100%;
   z-index: 100;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: visibility var(--aim), scale var(--aim), opacity var(--aim);
+  transition: visibility var(--aim), scale var(--aim), opacity var(--aim); 
 }
 
 .backdrop.is-hidden {
@@ -139,6 +139,11 @@ ul {
   cursor: pointer;
 }
 
+.modal-btm:hover,
+.modal-btm:focus {
+  background-color: var(--click-color);
+}
+
 /* ----- HEADER ----- */
 
 .header{
@@ -160,7 +165,7 @@ ul {
 .nav-site .nav-link:active,
 .nav-site .link:hover,
 .nav-site .link:focus {
-  color: var(--iris-color);
+  color: var(--click-color);
 }
 
 
@@ -168,7 +173,7 @@ ul {
   color: var(--darc-color);
 }
 
-/* .nav-link.current {
+.nav-link.current {
   position: relative;
   color: var(--iris-color);
 }
@@ -182,8 +187,8 @@ ul {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: var(--click-color);
-} */
+  background-color: var(--iris-color);
+}
 
 .nav-link {
   display: flex;
